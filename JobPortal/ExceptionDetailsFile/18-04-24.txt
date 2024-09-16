@@ -1,0 +1,50 @@
+-----------Exception Details on  4/18/2024 8:46:55 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/18/2024 8:46:55 PM
+
+Error Line No : ine 172
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The DELETE statement conflicted with the REFERENCE constraint "FK_JobSeekerSkills_Skill". The conflict occurred in database "JobPortal", table "dbo.JobSeekerSkills", column 'SkillID'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44377/Admin/DeleteSkill/3
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/18/2024 8:49:28 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/18/2024 8:49:28 PM
+
+Error Line No : ine 195
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The DELETE statement conflicted with the REFERENCE constraint "FK__JobVacanc__Categ__7E37BEF6". The conflict occurred in database "JobPortal", table "dbo.JobVacancies", column 'CategoryID'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44377/Admin/DeleteCategory/4
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

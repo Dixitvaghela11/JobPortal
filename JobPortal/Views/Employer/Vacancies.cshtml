@@ -1,0 +1,120 @@
+﻿@model IEnumerable<JobPortal.Models.JobDetails>
+
+@{
+    ViewBag.Title = "Posted jobs";
+    Layout = "~/Views/Shared/EmployerLayout.cshtml";
+}
+
+<h2>Vacancy list</h2>
+
+
+<button  onclick="window.location.href='/Employer/AddJobVacancy'" class="btn-10"><span>Create new vacancy</span></button>
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Job id</th>
+            <th scope="col">Job title</th>
+            <th scope="col">Employment type</th>
+            <th scope="col">Application deadline</th>
+            <th scope="col">Published</th>
+            <th scope="col">Views</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>#</td>
+                <td>@Html.DisplayFor(modelItem => item.JobTitle)</td>
+                <td>@Html.DisplayFor(modelItem => item.EmploymentType)</td>
+                <td>@Html.DisplayFor(modelItem => item.ApplicationDeadline)</td>
+                <td class="@(item.IsPublished ? "text-success" : "text-danger")">@Html.DisplayFor(modelItem => item.IsPublished)</td>
+                <td>@Html.DisplayFor(modelItem => item.NumberOfViews)</td>
+                <td>
+                    @Html.ActionLink("View", "JobDetails", "Employer", new { id = item.JobID }, new { @class = "genric-btn primary circle" }) |
+                    @Html.ActionLink("Applications", "Applications", "Employer", new { id = item.JobID }, new { @class = "genric-btn primary circle" }) |
+                    @Html.ActionLink("Edit", "UpdateVacancy", "Employer", new { id = item.JobID }, new { @class = "genric-btn primary circle" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    .btn-10,
+    .btn-10 *,
+    .btn-10 :after,
+    .btn-10 :before,
+    .btn-10:after,
+    .btn-10:before {
+        border: 0 solid;
+        box-sizing: border-box;
+    }
+
+    .btn-10 {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: button;
+        background-color: #010b1d;
+        background-image: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-size: 100%;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 0;
+        -webkit-mask-image: -webkit-radial-gradient(#010b1d, #fff);
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+        .btn-10:disabled {
+            cursor: default;
+        }
+
+        .btn-10:-moz-focusring {
+            outline: auto;
+        }
+
+        .btn-10 svg {
+            display: block;
+            vertical-align: middle;
+        }
+
+        .btn-10 [hidden] {
+            display: none;
+        }
+
+    .btn-10 {
+        border-radius: 99rem;
+        border-width: 2px;
+        overflow: hidden;
+        padding: 0.8rem 3rem;
+        position: relative;
+    }
+
+        .btn-10 span {
+            mix-blend-mode: difference;
+        }
+
+        .btn-10:before {
+            background: #fff;
+            content: "";
+            display: block;
+            height: var(--height, 1em);
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateX(var(--progress, -100%));
+            transition: transform 0.2s ease, height 0.2s ease;
+            width: 100%;
+        }
+
+        .btn-10:hover:before {
+            --progress: 0;
+        }
+
+        .btn-10:active:before {
+            --height: 100%;
+        }
+</style>

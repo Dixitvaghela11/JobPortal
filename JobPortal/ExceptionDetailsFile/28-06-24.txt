@@ -1,0 +1,360 @@
+-----------Exception Details on  6/28/2024 6:59:14 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 6:59:14 PM
+
+Error Line No : line 49
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 6:59:38 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 6:59:38 PM
+
+Error Line No : line 49
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:09:51 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:09:51 PM
+
+Error Line No : line 49
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:09:56 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:09:56 PM
+
+Error Line No : line 49
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:10:02 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:10:02 PM
+
+Error Line No : line 49
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:11:13 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:11:13 PM
+
+Error Line No : line 49
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:41:44 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:41:44 PM
+
+Error Line No : ine 161
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_DeleteExperienceDetail'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/DeleteExperienceDetails/1002
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:45:40 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:45:40 PM
+
+Error Line No : ine 161
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_DeleteExperienceDetail'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/DeleteExperienceDetails/1002
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:45:43 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:45:43 PM
+
+Error Line No : ine 161
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_DeleteExperienceDetail'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/DeleteExperienceDetails/1002
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:52:45 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:52:45 PM
+
+Error Line No : ine 161
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_DeleteExperienceDetail'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/DeleteExperienceDetails/1002
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 7:53:11 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 7:53:11 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 8:26:16 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 8:26:16 PM
+
+Error Line No : line 47
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 8:30:51 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 8:30:51 PM
+
+Error Line No : ine 115
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function SP_CreateExperienceDetail has too many arguments specified.
+
+ Error Page Url: https://localhost:44377/JobSeeker/AddExperienceDetails
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 8:32:30 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 8:32:30 PM
+
+Error Line No : ine 115
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function SP_CreateExperienceDetail has too many arguments specified.
+
+ Error Page Url: https://localhost:44377/JobSeeker/AddExperienceDetails
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/28/2024 8:33:00 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/28/2024 8:33:00 PM
+
+Error Line No : ine 115
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function SP_CreateExperienceDetail has too many arguments specified.
+
+ Error Page Url: https://localhost:44377/JobSeeker/AddExperienceDetails
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

@@ -1,0 +1,144 @@
+﻿@{
+    ViewBag.Title = "AddExperienceDetails";
+    Layout = "~/Views/Shared/JobSeekerLayout.cshtml";
+}
+
+<link href="~/Content/select2.min.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<div class="d-flex justify-content-center mt-5">
+    <div class="col-md-6">
+        <form action="@Url.Action("AddExperienceDetails", "JobSeeker")" method="post" onsubmit="return ValidateExperienceForm()">
+            <div class="card p-3" style="border: none; transform: translateY(0);" id="experienceContainer">
+                <center><h3>Add Experience Details</h3></center>
+                <div class="form-group mt-2">
+                    <label for="companyname">Company Name:</label>
+                    <input type="text" id="companyname" name="CompanyName" class="form-control" onblur="validateJobTitle(this)" />
+                    <span id="error-jobTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="jobTitle">Job Title:</label>
+                    <input type="text" id="jobTitle" name="JobTitle" class="form-control" onblur="validateJobTitle(this)" />
+                    <span id="error-jobTitle" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="designation">Designation:</label>
+                    <input type="text" id="designation" name="Designation" class="form-control" onblur="validateDesignation(this)" />
+                    <span id="error-designation" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="Location" class="form-control" onblur="validateLocation(this)" />
+                    <span id="error-location" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" name="Start_Date" class="form-control" onblur="validateStartDate(this)" />
+                    <span id="error-startDate" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" name="End_Date" class="form-control" onblur="validateEndDate(this)" />
+                    <span id="error-endDate" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="Description" class="form-control" onblur="validateDescription(this)"></textarea>
+                    <span id="error-description" class="text-danger"></span>
+                </div>
+                <center>
+                    <input type="submit" value="Submit" class="btn btn-primary mt-2" />
+                </center>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/Scripts/jquery-3.7.1.min.js"></script>
+    <script src="~/Scripts/MyScripts/select2.min.js"></script>
+    <script src="~/Scripts/MyScripts/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#universityList").select2({
+                placeholder: "Select university",
+                allowClear: true,
+                width: '100%'
+            });
+
+            $.getJSON('/Scripts/data.json', function (data) {
+                data.forEach(function (university) {
+                    $("#universityList").append(`<option value="${university.name}">${university.name}</option>`);
+                });
+            })
+            .fail(function (error) {
+                console.error('Error loading local JSON file:', error);
+            });
+        });
+
+        function validateJobTitle(element) {
+            if (!element.value) {
+                document.getElementById('error-jobTitle').innerText = 'Job title is required.';
+                return false;
+            }
+            document.getElementById('error-jobTitle').innerText = '';
+            return true;
+        }
+
+        function validateDesignation(element) {
+            if (!element.value) {
+                document.getElementById('error-designation').innerText = 'Designation is required.';
+                return false;
+            }
+            document.getElementById('error-designation').innerText = '';
+            return true;
+        }
+
+        function validateLocation(element) {
+            if (!element.value) {
+                document.getElementById('error-location').innerText = 'Location is required.';
+                return false;
+            }
+            document.getElementById('error-location').innerText = '';
+            return true;
+        }
+
+        function validateStartDate(element) {
+            if (!element.value) {
+                document.getElementById('error-startDate').innerText = 'Start date is required.';
+                return false;
+            }
+            document.getElementById('error-startDate').innerText = '';
+            return true;
+        }
+
+        function validateEndDate(element) {
+            if (!element.value) {
+                document.getElementById('error-endDate').innerText = 'End date is required.';
+                return false;
+            }
+            document.getElementById('error-endDate').innerText = '';
+            return true;
+        }
+
+        function validateDescription(element) {
+            if (!element.value) {
+                document.getElementById('error-description').innerText = 'Description is required.';
+                return false;
+            }
+            document.getElementById('error-description').innerText = '';
+            return true;
+        }
+
+        function ValidateExperienceForm() {
+            return validateJobTitle(document.getElementById('jobTitle')) &&
+                   validateDesignation(document.getElementById('designation')) &&
+                   validateLocation(document.getElementById('location')) &&
+                   validateStartDate(document.getElementById('startDate')) &&
+                   validateEndDate(document.getElementById('endDate')) &&
+                   validateDescription(document.getElementById('description'));
+        }
+    </script>
+}

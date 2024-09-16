@@ -1,0 +1,49 @@
+-----------Exception Details on  6/24/2024 8:31:17 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/24/2024 8:31:17 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/24/2024 9:19:10 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/24/2024 9:19:10 PM
+
+Error Line No : ine 437
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Invalid salt: salt cannot be null or empty
+Parameter name: salt
+
+ Error Page Url: https://localhost:44377/Admin/ChangePassword
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

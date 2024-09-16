@@ -1,0 +1,98 @@
+-----------Exception Details on  4/11/2024 12:23:08 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/11/2024 12:23:08 AM
+
+Error Line No : ine 140
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function 'SP_CreateContactUsMessage' expects parameter '@FirstName', which was not supplied.
+
+ Error Page Url: https://localhost:44377/Home/ContactUs
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/11/2024 12:25:22 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/11/2024 12:25:22 AM
+
+Error Line No : ine 140
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function 'SP_CreateContactUsMessage' expects parameter '@FirstName', which was not supplied.
+
+ Error Page Url: https://localhost:44377/Home/ContactUs
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/11/2024 1:11:18 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/11/2024 1:11:18 AM
+
+Error Line No : ine 172
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The DELETE statement conflicted with the REFERENCE constraint "FK_JobSeekerSkills_Skill". The conflict occurred in database "JobPortal", table "dbo.JobSeekerSkills", column 'SkillID'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44377/Admin/DeleteSkill/3
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/11/2024 1:11:54 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/11/2024 1:11:54 AM
+
+Error Line No : ine 172
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The DELETE statement conflicted with the REFERENCE constraint "FK_JobSeekerSkills_Skill". The conflict occurred in database "JobPortal", table "dbo.JobSeekerSkills", column 'SkillID'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44377/Admin/DeleteSkill/3
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

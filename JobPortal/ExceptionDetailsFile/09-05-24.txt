@@ -1,0 +1,720 @@
+-----------Exception Details on  5/9/2024 4:24:57 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 4:24:57 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 4:25:56 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 4:25:56 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:19:59 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:19:59 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:20:23 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:20:23 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:20:27 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:20:27 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:20:50 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:20:50 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:22:30 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:22:30 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:22:31 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:22:31 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:22:47 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:22:47 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:23:06 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:23:06 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:23:08 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:23:08 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:23:18 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:23:18 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:23:30 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:23:30 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:23:31 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:23:31 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:23:31 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:23:31 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:23:40 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:23:40 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:23:53 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:23:53 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:24:11 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:24:11 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:27:07 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:27:07 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:27:17 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:27:17 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:28:36 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:28:36 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:28:47 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:28:47 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:29:55 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:29:55 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:30:06 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:30:06 PM
+
+Error Line No : ine 349
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:30:45 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:30:45 PM
+
+Error Line No : ine 531
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/JobSeeker/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:31:38 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:31:38 PM
+
+Error Line No : ine 531
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/JobSeeker/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 6:32:00 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 6:32:00 PM
+
+Error Line No : ine 531
+
+Error Message: ArgumentException
+
+Exception Type: System.ArgumentException
+
+Error Location : Column 'CompanyLogo' does not belong to table .
+
+ Error Page Url: https://localhost:44377/JobSeeker/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 9:00:26 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 9:00:26 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 9:34:45 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 9:34:45 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/9/2024 9:58:19 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/9/2024 9:58:19 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

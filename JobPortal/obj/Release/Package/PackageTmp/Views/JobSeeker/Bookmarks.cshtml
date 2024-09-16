@@ -1,0 +1,109 @@
+﻿@model IEnumerable<JobPortal.Models.Bookmark>
+
+@{
+    ViewBag.Title = "Saved jobs";
+    Layout = "~/Views/Shared/JobSeekerLayout.cshtml";
+}
+
+<h2>Saved jobs</h2>
+
+<p>
+    <button onclick="window.location.href='/JobSeeker/Jobs'" class="btn-10"><span>Apply for new position</span></button>
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <p>Job Id : @item.JobId</p>
+                    <h5 class="card-title"><a href="@Url.Action("JobDetails", new { id = item.JobId })" class="job-link">@item.JobTitle</a></h5>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+
+<style>
+    .btn-10,
+    .btn-10 *,
+    .btn-10 :after,
+    .btn-10 :before,
+    .btn-10:after,
+    .btn-10:before {
+        border: 0 solid;
+        box-sizing: border-box;
+    }
+
+    .btn-10 {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: button;
+        background-color: #010b1d;
+        background-image: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-size: 100%;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 0;
+        -webkit-mask-image: -webkit-radial-gradient(#010b1d, #fff);
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+        .btn-10:disabled {
+            cursor: default;
+        }
+
+        .btn-10:-moz-focusring {
+            outline: auto;
+        }
+
+        .btn-10 svg {
+            display: block;
+            vertical-align: middle;
+        }
+
+        .btn-10 [hidden] {
+            display: none;
+        }
+
+    .btn-10 {
+        border-radius: 99rem;
+        border-width: 2px;
+        overflow: hidden;
+        padding: 0.8rem 3rem;
+        position: relative;
+    }
+
+        .btn-10 span {
+            mix-blend-mode: difference;
+        }
+
+        .btn-10:before {
+            background: #fff;
+            content: "";
+            display: block;
+            height: var(--height, 1em);
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateX(var(--progress, -100%));
+            transition: transform 0.2s ease, height 0.2s ease;
+            width: 100%;
+        }
+
+        .btn-10:hover:before {
+            --progress: 0;
+        }
+
+        .btn-10:active:before {
+            --height: 100%;
+        }
+</style>

@@ -1,0 +1,182 @@
+﻿@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+<!-- Hero Area Start-->
+<div class="slider-area" style="padding-left: 0px;">
+    <!-- Add padding to the left side -->
+    <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="@Url.Content("~/Content1/assets/img/hero/about.jpg") ">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="hero-cap text-center">
+                        <center><h2>Contact Us</h2></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Section Start -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="card col-md-7 p-3 mt-4">
+                <center><h2>Contact Us</h2></center>
+                <form id="contactForm" method="post" action="@Url.Action("ContactUs","Home")">
+                    <div class="wrap-input-9">
+                        <input class="input" name="FirstName" type="text" placeholder="First name" id="FirstName">
+                        <span id="error-fname" class="focus-border"></span>
+                    </div>
+                    <div class="wrap-input-9">
+                        <input type="text" name="LastName" placeholder="Last name" class="input" id="LastName">
+                        <span id="error-lname" class="focus-border"></span>
+                    </div>
+                    <div class="wrap-input-9">
+                        <input type="number" name="PhoneNumber" id="PhoneNumber" placeholder="Phone number" class="input">
+                        <span id="error-phone" class="focus-border"></span>
+                    </div>
+                    <div class="wrap-input-9">
+                        <input type="email" name="Email" placeholder="Email address" id="Email" class="input">
+                        <span id="error-email" class="focus-border"></span>
+                    </div>
+                    <div class="wrap-input-9">
+                        <textarea id="message" name="Message" rows="5" class="input"></textarea>
+                        <span id="error-message" class="focus-border"></span>
+                    </div>
+                    <center>
+                        <button type="submit" id="submitButton" class="btn-17">
+                            <span class="text-container">
+                                <span class="text">Submit</span>
+                            </span>
+                        </button>
+                    </center>
+                </form>
+            </div>
+            <div class="col-lg-3 offset-lg-1">
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-home"></i></span>
+                    <div class="media-body">
+                        <h3>Surat Gujarat.</h3>
+                        <p>Surat, Amroli 394107</p>
+                    </div>
+                </div>
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                    <div class="media-body">
+                        <h3>+91 9724901801</h3>
+                        <p>Mon to Fri 9am to 6pm</p>
+                    </div>
+                </div>
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-email"></i></span>
+                    <div class="media-body">
+                        <h3>dixitpqr1432@gmail.com</h3>
+                        <p>Send us your query anytime!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.getElementById("submitButton").addEventListener("click", function (event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Validate the form
+        var isValid = validateContactForm();
+
+        // If the form is valid, submit it
+        if (isValid) {
+            document.forms["contactForm"].submit();
+        }
+    });
+
+    function validateContactForm() {
+        var isValid = true;
+
+        if (!validateFname()) isValid = false;
+        if (!validateLname()) isValid = false;
+        if (!validatePhone()) isValid = false;
+        if (!validateEmail()) isValid = false;
+        if (!validateMessage()) isValid = false;
+
+        return isValid;
+    }
+
+    function validateFname() {
+        var fname = document.getElementById("FirstName").value;
+        var error = document.getElementById("error-fname");
+
+        if (fname.trim() === "") {
+            error.textContent = "First name is required";
+            return false;
+        } else {
+            error.textContent = "";
+            return true;
+        }
+    }
+
+    function validateLname() {
+        var lname = document.getElementById("LastName").value;
+        var error = document.getElementById("error-lname");
+
+        if (lname.trim() === "") {
+            error.textContent = "Last name is required";
+            return false;
+        } else {
+            error.textContent = "";
+            return true;
+        }
+    }
+
+    function validatePhone() {
+        var phone = document.getElementById("PhoneNumber").value;
+        var error = document.getElementById("error-phone");
+
+        if (phone.trim() === "") {
+            error.textContent = "Phone number is required";
+            return false;
+        } else {
+            error.textContent = "";
+            return true;
+        }
+    }
+
+    function validateEmail() {
+        var email = document.getElementById("Email").value;
+        var error = document.getElementById("error-email");
+
+        if (email.trim() === "") {
+            error.textContent = "Email is required";
+            return false;
+        } else if (!validateEmailFormat(email)) {
+            error.textContent = "Invalid email format";
+            return false;
+        } else {
+            error.textContent = "";
+            return true;
+        }
+    }
+
+    function validateMessage() {
+        var message = document.getElementById("message").value;
+        var error = document.getElementById("error-message");
+
+        if (message.trim() === "") {
+            error.textContent = "Message is required";
+            return false;
+        } else {
+            error.textContent = "";
+            return true;
+        }
+    }
+
+    function validateEmailFormat(email) {
+        // Email validation logic
+        // You can use regular expressions or any other method to validate the email format
+        return true; // Return true for demonstration purposes
+    }
+</script>
+<link rel="stylesheet" href="~/Content1/assets/css/button.css" />

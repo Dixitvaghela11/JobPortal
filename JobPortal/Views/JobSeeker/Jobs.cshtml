@@ -1,0 +1,210 @@
+﻿@model IEnumerable<JobPortal.Models.JobDetails>
+
+@{
+    ViewBag.Title = "Jobs";
+    Layout = "~/Views/Shared/JobSeekerLayout.cshtml";
+    var categories = Model.Select(job => new { CategoryName = job.CategoryName, CategoryId = job.CategoryID }).Distinct().ToList();
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container-fluid">
+    <div class="row mt-2">
+        <div class="col-md-3">
+            <div class="card p-2">
+                <h4>Apply filters</h4>
+                <div class="input-group mb-2">
+                    <input type="text" id="searchString" placeholder="Search..." class="form-control" />
+                    <div class="input-group-append">
+                        <button id="searchButton" class="btn-24" type="button">Search</button>
+                    </div>
+                </div>
+                <div class="input-group mb-2">
+                    <input type="text" id="cityInput" placeholder="Enter city..." class="form-control" />
+                </div>
+                <p>Employment Type:</p>
+                <select id="employmentType" class="form-control mb-2">
+                    <option value="">All</option>
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="contract">Contract</option>
+                    <option value="Freelance">Freelance</option>
+                    <option value="Remote">Remote</option>
+                </select>
+                <p>Categories :</p>
+                @foreach (var cat in categories)
+                {
+                    <a href="@Url.Action("Jobs", "Home", new { search = cat.CategoryName })" class="filter-category">@cat.CategoryName</a>
+                }
+
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div id="jobListings">
+                @foreach (var item in Model.OrderByDescending(job => job.JobID))
+                {
+                    if (item.IsPublished && item.ApplicationDeadline >= DateTime.Now)
+                    {
+                        <div class="row mt-2 job-item" data-title="@item.JobTitle.ToLower()" data-category="@item.CategoryName.ToLower()" data-location="@item.Location.ToLower()" data-type="@item.EmploymentType.ToLower()">
+                            <div class="card p-2">
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img alt="CompanyLogo" src="data:jpg/png;base64,@Convert.ToBase64String(item.CompanyLogo)" class="rounded" width="60" height="60" />
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h3>@item.JobTitle</h3>
+                                            <div class="col-md-1"></div>
+                                            <div class="col-md-10">
+                                                <p class="reduce-line-spacing text-muted"><i class="fa fa-building"></i> @item.CompanyName</p>
+                                                <p class="reduce-line-spacing text-muted"><i class="fa fa-briefcase"></i> @item.CategoryName ,  <i class="fa fa-map-marker"></i> @item.Location</p>
+                                                <p class="reduce-line-spacing text-muted"><i class="fa fa-money-bill-alt"></i> @item.Salary</p>
+                                                <p class="reduce-line-spacing text-muted"><i class="fa fa-briefcase"></i> @item.EmploymentType</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div style="text-align: right;">
+                                            @Html.ActionLink("Details", "JobDetails", new { id = item.JobID }, new { @class = "genric-btn primary circle" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#searchButton").click(function () {
+            filterJobs();
+        });
+
+        $("#searchString, #cityInput, #employmentType").change(function () {
+            filterJobs();
+        });
+
+        $("#searchString, #cityInput").keypress(function (event) {
+            if (event.keyCode === 13) { // Enter key
+                filterJobs();
+            }
+        });
+
+        function filterJobs() {
+            var searchString = $("#searchString").val().trim().toLowerCase();
+            var city = $("#cityInput").val().trim().toLowerCase();
+            var employmentType = $("#employmentType").val().toLowerCase();
+
+            $(".job-item").each(function () {
+                var title = $(this).data("title");
+                var category = $(this).data("category");
+                var location = $(this).data("location");
+                var type = $(this).data("type");
+                var match = (searchString === "" || title.includes(searchString) || category.includes(searchString) || location.includes(searchString)) &&
+                    (city === "" || location.includes(city)) &&
+                    (employmentType === "" || type === employmentType);
+                $(this).toggle(match);
+            });
+        }
+    });
+</script>
+<style>
+    .btn-24,
+    .btn-24 *,
+    .btn-24 :after,
+    .btn-24 :before,
+    .btn-24:after,
+    .btn-24:before {
+        border: 0 solid;
+        box-sizing: border-box;
+    }
+
+    .btn-24 {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: button;
+        background-color: #008080;
+        background-image: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-size: 100%;
+        font-weight: 900;
+        line-height: 1;
+        margin: 0;
+        -webkit-mask-image: -webkit-radial-gradient(#008080, #fff);
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+        .btn-24:disabled {
+            cursor: default;
+        }
+
+        .btn-24:-moz-focusring {
+            outline: auto;
+        }
+
+        .btn-24 svg {
+            display: block;
+            vertical-align: middle;
+        }
+
+        .btn-24 [hidden] {
+            display: none;
+        }
+
+    .btn-24 {
+        --background: #008080;
+        background: none;
+        overflow: hidden;
+        padding: 0.8rem 3rem;
+        position: relative;
+    }
+
+        .btn-24 span {
+            display: block;
+            position: relative;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-24:after,
+        .btn-24:before {
+            --tilt: 20px;
+            background: #fff;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+            content: "";
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transition: -webkit-clip-path 0.2s ease;
+            transition: clip-path 0.2s ease;
+            transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .btn-24:after {
+            --thickness: 5px;
+            background: var(--background);
+            height: calc(100% - var(--thickness) * 2);
+            left: var(--thickness);
+            top: var(--thickness);
+            width: calc(100% - var(--thickness) * 2);
+        }
+
+        .btn-24:hover span {
+            transform: translateX(-20px);
+        }
+
+        .btn-24:hover:after,
+        .btn-24:hover:before {
+            -webkit-clip-path: polygon( 0 0, calc(100% - var(--tilt)) 0, 100% 50%, calc(100% - var(--tilt)) 100%, 0 100% );
+            clip-path: polygon( 0 0, calc(100% - var(--tilt)) 0, 100% 50%, calc(100% - var(--tilt)) 100%, 0 100% );
+        }
+</style>

@@ -1,0 +1,55 @@
+﻿@model JobPortal.Models.Login
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+<div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <img src="~/Content/Static/role-collection-ot.png" />
+        </div>
+        <div class="col-md-4 mt-4">
+            <div class="card p-3" style="transform: translateX(0)">
+                <h2 class="text-center">Login</h2>
+                <form action="/Home/Login" method="post" onsubmit="return validateForm();">
+                    @Html.AntiForgeryToken()
+                    <div class="form-group mt-2">
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username" placeholder="Username" class="form-control" style="border-radius: 20px" />
+                        <span id="error-username" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="Password">Password</label>
+                        <input type="password" name="Password" id="Password" placeholder="Password" class="form-control" style="border-radius: 20px" />
+                        <span id="error-password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group text-center mt-2">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">
+                            <i class="fas fa-lock"></i> Remember Me
+                        </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!-- Add some non-breaking spaces for spacing -->
+                        <a style="color:black;" href="@Url.Action("JobSeekerRegister","Home")" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">Register now</a>
+                    </div>
+                    <center>
+                    <button class="btn-82"><span>Login</span></button>
+                        </center>
+                </form>
+             
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/MyScripts/main.js"></script>
+<link rel="stylesheet" href="~/Content1/assets/css/button.css" />
+<script>
+    function preventBack() {
+        window.history.forward();
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () {
+        null;
+    }
+</script>

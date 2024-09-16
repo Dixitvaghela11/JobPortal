@@ -1,0 +1,24 @@
+-----------Exception Details on  6/15/2024 6:38:39 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/15/2024 6:38:39 PM
+
+Error Line No : line 47
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

@@ -1,0 +1,216 @@
+-----------Exception Details on  4/12/2024 12:10:12 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 12:10:12 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/12/2024 12:10:33 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 12:10:33 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/12/2024 12:10:38 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 12:10:38 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/12/2024 12:10:51 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 12:10:51 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/12/2024 12:11:18 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 12:11:18 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/12/2024 12:11:24 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 12:11:24 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/12/2024 12:11:37 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 12:11:37 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/12/2024 12:11:56 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 12:11:56 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/12/2024 1:28:38 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/12/2024 1:28:38 AM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

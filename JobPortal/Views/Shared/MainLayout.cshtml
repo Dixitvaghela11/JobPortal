@@ -1,0 +1,278 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Job Portal | @ViewBag.Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="~/icon.png">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="~/Content1/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/flaticon.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/price_rangs.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/slicknav.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/animate.min.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/slick.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/nice-select.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/style.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/button.css" />
+</head>
+
+<body>
+ 
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="~/Content1/assets/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparrent">
+            <div class="headder-top header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-2">
+                            <!-- Logo -->
+                            <div class="logo">
+                                <a href="@Url.Content("~/Home/Index")">
+                                    <img src="~/Content1/assets/img/logo/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9 col-md-9">
+                            <div class="menu-wrapper">
+                                <!-- Main-menu -->
+                                <div class="main-menu">
+                                    <nav class="d-none d-lg-block">
+                                        <ul id="navigation">
+                                            <li><a href="@Url.Content("~/Home/Index")">Home</a></li>
+                                            <li><a href="@Url.Content("~/Home/Jobs")">Find a Jobs </a></li>
+                                            <li><a href="@Url.Content("~/Home/About")">About</a></li>
+
+                                            <li><a href="@Url.Content("~/Home/ContactUs")">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- Header-btn -->
+                                <div class="header-btn d-none f-right d-lg-block">
+                                    <a href="@Url.Content("~/Home/JobSeekerRegister")" class="btn head-btn1">Register</a>
+                                    <a href="@Url.Content("~/Home/Login")" class="btn head-btn2">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    @{
+        string message = TempData["Message"] as string;
+        if (!String.IsNullOrEmpty(message))
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong> @message</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <script>
+                function preventBack() {
+                    window.history.forward();
+                }
+
+                setTimeout(preventBack, 0);
+
+                window.onunload = function () {
+                    null;
+                };
+            </script>
+        }
+    }
+    <main>
+        @RenderBody()
+    </main>
+    <br />
+    <link rel="stylesheet" href="~/Content1/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/flaticon.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/price_rangs.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/slicknav.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/animate.min.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/slick.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/nice-select.css">
+    <link rel="stylesheet" href="~/Content1/assets/css/style.css">
+
+    <footer>
+        <!-- Footer Start-->
+        <div class="footer-area footer-bg footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <div class="footer-tittle">
+                                    <h4>About Us</h4>
+                                    <div class="footer-pera">
+                                        <p>Heaven frucvitful doesn't cover lesser dvsays appear creeping seasons so behold.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Contact Info</h4>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Address :Amroli Surat-394107.
+                                        </p>
+                                    </li>
+                                    <li><a href="">Phone : +919724901801</a></li>
+                                    <li><a href="mailto:dixitpqr1432@gmail.com">Email : dixitpqr1432@gmail.com</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Important Link</h4>
+                                <ul>
+                                    <li><a href="@Url.Content("~/Home/Index")">Home</a></li>
+                                    <li><a href="@Url.Content("~/Home/Jobs")">View jobs</a></li>
+                                    <li><a href="@Url.Content("~/Home/ContactUs")">Contact Us</a></li>
+                                    <li><a href="@Url.Content("~/Home/About")">About Us</a></li>
+                                    <li><a href="@Url.Content("~/Home/EmployerRegister")">Employer Register</a></li>
+                                    <li><a href="@Url.Content("~/Home/JobSeekerRegister")">Job Seeker Register</a></li>
+                                    <li><a href="@Url.Content("~/Home/Login")">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Newsletter</h4>
+                                <div class="footer-pera footer-pera2">
+                                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
+                                </div>
+                                <!-- Form -->
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action=""
+                                              method="get" class="subscribe_form relative mail_part">
+                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
+                                                   class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                                   onblur="this.placeholder = ' Email Address '">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                        class="email_icon newsletter-submit button-contactForm">
+                                                    <img src="~/Content1/assets/img/icon/form.png" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex justify-content-between align-items-center">
+
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="footer-social f-right">
+                                <a href="https://facebook.com/dixitvaghela"><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href="https://github.com/dixitvaghela11"><i class="fab fa-github"></i></a>
+                                <a href="https://www.instagram.com/dix____11/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/dixit-vaghela-611588274/"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="~/Content1/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="~/Content1/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/Content1/assets/js/popper.min.js"></script>
+    <script src="~/Content1/assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="~/Content1/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="~/Content1/assets/js/owl.carousel.min.js"></script>
+    <script src="~/Content1/assets/js/slick.min.js"></script>
+    <script src="~/Content1/assets/js/price_rangs.js"></script>
+
+    <!-- One Page, Animated-HeadLin -->
+    <script src="~/Content1/assets/js/wow.min.js"></script>
+    <script src="~/Content1/assets/js/animated.headline.js"></script>
+    <script src="~/Content1/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="~/Content1/assets/js/jquery.scrollUp.min.js"></script>
+    <script src="~/Content1/assets/js/jquery.nice-select.min.js"></script>
+    <script src="~/Content1/assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="~/Content1/assets/js/contact.js"></script>
+    <script src="~/Content1/assets/js/jquery.form.js"></script>
+    <script src="~/Content1/assets/js/jquery.validate.min.js"></script>
+    <script src="~/Content1/assets/js/mail-script.js"></script>
+    <script src="~/Content1/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="~/Content1/assets/js/plugins.js"></script>
+    <script src="~/Content1/assets/js/main.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @Styles.Render("~/Content/MyCss/site.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <style>
+        .header-area {
+            background-color: white; /* Change the color code as needed */
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the shadow properties as needed */
+        }
+    </style>
+</body>
+</html>

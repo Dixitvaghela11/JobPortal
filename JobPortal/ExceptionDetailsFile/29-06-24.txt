@@ -1,0 +1,240 @@
+-----------Exception Details on  6/29/2024 7:18:14 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:18:14 PM
+
+Error Line No : ine 115
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function SP_CreateExperienceDetail has too many arguments specified.
+
+ Error Page Url: https://localhost:44377/JobSeeker/AddExperienceDetails
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:41:54 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:41:54 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1003
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:44:43 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:44:43 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1003
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:44:50 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:44:50 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1003
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:46:43 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:46:43 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1004
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:51:42 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:51:42 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1004
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:52:50 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:52:50 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1004
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:53:06 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:53:06 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1004
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:56:24 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:56:24 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1004
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/29/2024 7:56:30 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/29/2024 7:56:30 PM
+
+Error Line No : ine 142
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateExperienceDetails/1004
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

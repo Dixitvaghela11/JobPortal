@@ -1,0 +1,193 @@
+﻿@model IEnumerable<JobPortal.Models.ChatMessage>
+@{
+    ViewBag.Title = "SendMessage";
+    Layout = "~/Views/Shared/JobSeekerLayout.cshtml";
+}
+<html>
+<head>
+    <link rel="stylesheet" href="~/Content1/msg/css/stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container-fluid h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-md-8 col-xl-6 chat">
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header msg_head" style="background-color: #FFF; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <!-- Sender information -->
+                        <div class="d-flex align-items-center">
+                            <!-- Sender profile image -->
+                            <div style="margin-left: 20px; display: flex; justify-content: center; align-items: center; width: 45px; height: 45px; background: #E6E7ED; border-radius: 50%; background-position: center; background-size: cover; background-repeat: no-repeat; color: black; text-transform: uppercase; font-size: 18px;">
+                                @Model.First().CompanyName[0]
+                            </div>
+                            <!-- Sender name -->
+                            <div class="user_info ml-3">
+                                <span><a class="msg-profile" style="color: black;">@Model.First().CompanyName</a></span>
+                            </div>
+                        </div>
+                        <!-- Action menu -->
+                        <div class="ml-auto">
+                            <span id="action_menu_btn"><i style="color:black" class="fas fa-ellipsis-v"></i></span>
+                            <div class="action_menu">
+                                <ul style="color:black; list-style-type: none; padding: 0;">
+                                    <li style="color: #FFF; padding: 5px 10px;"><a href="@Url.Action("JobSeekerProfile","Employer",new {id=Model.First().SeekerID})"><i class="fas fa-user-circle"></i> View profile</a></li>
+                                    <li style="color: black; padding: 5px 10px;"><a href="#" id="blockChat"><i class="fas fa-ban"></i> Block</a></li>
+                                    <li style="color: black; padding: 5px 10px;"><a href="#" id="unblockChat" style="display:none;"><i class="fas fa-unlock"></i> Unblock</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card body -->
+                    <div style="background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');" class="card-body msg_card_body">
+                        <!-- Displaying messages -->
+                        @foreach (var message in Model)
+                        {
+                            if (message.Sender == 'E')
+                            {
+                                <div class="d-flex justify-content-start mb-4">
+                                    <!-- Receiver profile image -->
+                                    <div style="margin-left: 20px; display: flex; justify-content: center; align-items: center; width: 45px; height: 45px; background: #E6E7ED; border-radius: 50%; background-position: center; background-size: cover; background-repeat: no-repeat; color: black; text-transform: uppercase; font-size: 14px;">
+                                        @Model.First().CompanyName[0]
+                                    </div>
+                                    <!-- Message content -->
+                                    <div class="msg_cotainer" style="max-width: 70%; word-wrap: break-word;">
+                                        <div class="message_content">
+                                            @Html.Raw(message.Message.Replace(Environment.NewLine, "<br />"))
+                                        </div>
+                                        <div class="msg_time" style="display: block; font-size: 10px; margin-top: 5px; color: black; width: 112px;">@message.DateAndTime</div>
+                                    </div>
+                                </div>
+
+                            }
+                            else
+                            {
+                                <!-- Sender -->
+                                <div class="d-flex justify-content-end mb-4">
+                                    <div class="msg_cotainer_send" style="max-width: 70%; word-wrap: break-word;">
+                                        @Html.Raw(message.Message.Replace(Environment.NewLine, "<br />"))
+                                        <div class="msg_time_send" style="display: block; font-size: 10px; margin-top: 5px; color: black; width: 112px;">@message.DateAndTime</div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer" style="background-color: #FFF; border-top: 1px solid #e6e6e6; box-shadow: 0 -2px 4px rgba(0,0,0,0.1); padding-top: 10px;">
+                        <div class="input-group">
+                            <!-- Emoji icon -->
+                            <span style="margin-right: 5px; color: #78e08f;"><i class="fas fa-smile" style="font-size: 20px;"></i></span>
+                            <!-- Textarea for typing message -->
+                            <textarea id="Message" name="" placeholder="Type your message..." onkeyup="sendMessageOnEnter(event)" style="flex-grow: 1; height: 30px; min-height: 30px; padding: 10px; border: none; background-color: #FFF; border-radius: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); resize: none; overflow-y: hidden;"></textarea>
+                            <!-- Send button -->
+                            <div class="input-group-append">
+                                <span onclick="sendMessage()">
+                                    <div style="width: 30px; height: 30px; background-color: #78e08f; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                                        <i id="sendButton" class="fas fa-paper-plane" style="color: white; font-size: 18px;"></i>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Placeholder message -->
+                        <div class="placeholder-message" style="font-style: italic; color: #ccc; padding-top: 5px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Function to scroll chat to bottom
+        function scrollToBottom() {
+            var messageBody = $('.msg_card_body');
+            messageBody.scrollTop(messageBody[0].scrollHeight);
+        }
+
+        // Function to handle sending messages when Enter key is pressed
+        function sendMessageOnEnter(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                sendMessage();
+            }
+        }
+
+        // Function to send a message
+        function sendMessage() {
+            var id = @Model.First().EmployerID;
+            var message = $("#Message").val();
+            if (message != "") {
+                sendMessageToController(id, message);
+            }
+            return false; // Prevent default form submission behavior
+        }
+
+        // Function to send message data to controller via AJAX
+        function sendMessageToController(id, message) {
+            var data = {
+                id: id,
+                message: message
+            };
+            $.ajax({
+                url: "@Url.Action("SendMessage", "JobSeeker")",
+                type: "POST",
+                data: data,
+                success: function (response) {
+                    console.log("Message sent successfully.");
+
+                    // Update the chat interface with the sent message after a short delay if message is short
+                    var currentDate = new Date();
+                    var formattedDate = currentDate.toLocaleString();
+                    var sentMessage = '<div class="d-flex justify-content-end mb-4">' +
+                                        '<div class="msg_cotainer_send">' +
+                                            message +
+                                            '<br>' + // Separate line for date/time
+                                            '<span style="display: block; font-size: 10px; margin-top: 5px; color: black; width: 112px;" class="msg_time_send">' + formattedDate + '</span>' +
+                                        '</div>' +
+                                    '</div>';
+                    $('.msg_card_body').append(sentMessage);
+                    scrollToBottom(); // Scroll to bottom after sending message
+                    $("#Message").val(""); // Clear the message input box after sending
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error sending message: " + error);
+                    console.error("Status: " + status);
+                    console.error("Response: " + xhr.responseText);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            scrollToBottom(); // Scroll to bottom on page load
+
+            // Toggle action menu visibility
+            $('#action_menu_btn').click(function () {
+                $('.action_menu').toggle();
+            });
+
+            // Block chat functionality
+            $('#blockChat').click(function (e) {
+                e.preventDefault(); // Prevent default link behavior
+                if (confirm("Are you sure you want to block this chat?")) {
+                    $('.type_msg').hide(); // Hide the message input box
+                    $('#blockChat').hide(); // Hide the "Block" option
+                    $('#unblockChat').show(); // Show the "Unblock" option
+                    $('.blocked-message').show(); // Show the blocked message
+                }
+            });
+
+            // Unblock chat functionality
+            $('#unblockChat').click(function (e) {
+                e.preventDefault(); // Prevent default link behavior
+                $('.type_msg').show(); // Show the message input box
+                $('#blockChat').show(); // Show the "Block" option
+                $('#unblockChat').hide(); // Hide the "Unblock" option
+                $('.blocked-message').hide(); // Hide the blocked message
+            });
+        });
+    </script>
+</body>
+</html>

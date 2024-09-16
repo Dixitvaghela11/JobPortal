@@ -1,0 +1,24 @@
+-----------Exception Details on  5/6/2024 9:01:36 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/6/2024 9:01:36 PM
+
+Error Line No : ine 147
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function 'SP_UpdateJobVacancy' expects parameter '@Description', which was not supplied.
+
+ Error Page Url: https://localhost:44377/Employer/UpdateVacancy/11
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

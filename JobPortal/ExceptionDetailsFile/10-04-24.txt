@@ -1,0 +1,50 @@
+-----------Exception Details on  4/10/2024 11:32:56 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/10/2024 11:32:56 PM
+
+Error Line No : ine 212
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Cannot open database "Job" requested by the login. The login failed.
+Login failed for user 'Dixit\dixit'.
+
+ Error Page Url: https://localhost:44377/Home/Jobs
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/10/2024 11:33:23 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/10/2024 11:33:23 PM
+
+Error Line No : ine 212
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Cannot open database "Job" requested by the login. The login failed.
+Login failed for user 'Dixit\dixit'.
+
+ Error Page Url: https://localhost:44377/Home/Jobs
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

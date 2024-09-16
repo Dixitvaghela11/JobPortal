@@ -1,0 +1,120 @@
+-----------Exception Details on  4/13/2024 7:59:29 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/13/2024 7:59:29 PM
+
+Error Line No : ine 347
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/13/2024 8:16:48 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/13/2024 8:16:48 PM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/13/2024 8:20:53 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/13/2024 8:20:53 PM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/13/2024 8:21:24 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/13/2024 8:21:24 PM
+
+Error Line No : line 87
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function 'SP_UpdateJobSeeker' expects parameter '@City', which was not supplied.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  4/13/2024 8:22:26 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 4/13/2024 8:22:26 PM
+
+Error Line No : line 87
+
+Error Message: SqlTypeException
+
+Exception Type: System.Data.SqlTypes.SqlTypeException
+
+Error Location : SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+
+ Error Page Url: https://localhost:44377/JobSeeker/UpdateProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

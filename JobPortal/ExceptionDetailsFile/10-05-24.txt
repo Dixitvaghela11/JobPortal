@@ -1,0 +1,24 @@
+-----------Exception Details on  5/10/2024 6:50:20 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/10/2024 6:50:20 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

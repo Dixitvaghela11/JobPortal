@@ -1,0 +1,102 @@
+﻿@model JobPortal.Models.EducationDetails
+@{
+    ViewBag.Title = "UpdateEductionDetails";
+    Layout = "~/Views/Shared/JobSeekerLayout.cshtml";
+}
+<link href="~/Content/select2.min.css" rel="stylesheet" />
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<div class="d-flex justify-content-center mt-5 ">
+    <div class="col-md-6">
+        <form action=@Url.Action("UpdateEducationDetails","JobSeeker") method="post" onsubmit="return ValidateEducationForm()">
+            <div class="card p-3" style="border: none;transform: translateY(0);" id="educationContainer">
+                <h3>Update eduction details</h3>
+                <input type="hidden" name="EducationId" value="@Model.EducationId" />
+                <div class="form-group  mt-2 ">
+                    <label for="universityList" class="text-left">University:</label>
+                    <select id="universityList" name="University" class="form-control" onblur="validateUniversity(this)"></select>
+                    <span id="error-universityList" class="text-danger"></span>
+                </div>
+                <div class="form-group  mt-2 ">
+                    <label for="major">Major:</label>
+                    <select id="major" name="Major" class="form-control " onblur="validateMajor(this)">
+                        <option value="">Please select</option>
+                        <option value="Bachelor of Computer Applications" @if (Model.Major == "Bachelor of Computer Applications") { <text> selected</text>}>Bachelor of Computer Applications (BCA)</option>
+                        <option value="Bachelor of Science in Information Technology" @if (Model.Major == "Bachelor of Science in Information Technology") { <text> selected</text>}>Bachelor of Science in Information Technology (BSc IT)</option>
+                        <option value="Master of Computer Application" @if (Model.Major == "Master of Computer Application") { <text> selected</text>}>Master of Computer Application (MCA)</option>
+                        <option value="Master of Science in Information Technology" @if (Model.Major == "Master of Science in Information Technology") { <text> selected</text>}>Master of Science in Information Technology (MSc IT)</option>
+                        <option value="Master Of Science (Information And Communication Technology )" @if (Model.Major == "Master Of Science (Information And Communication Technology )") { <text> selected</text>}>Master Of Science (Information And Communication Technology ) [M.Sc. (I.C.T.)]</option>
+                    </select>
+
+                    <span id="error-major" class="text-danger"></span>
+                </div>
+                <div class="form-group  mt-2 ">
+                    <label for="degree">Degree:</label>
+                    <select id="degree" name="Degree" class="form-control " onblur="validateDegree(this)">
+                        <option value="">Please select</option>
+                        <option value="Master" @if (Model.Degree == "Master") { <text> selected</text> }>Master</option>
+                        <option value="Graduation" @if (Model.Degree == "Graduation") { <text> selected</text> }>Graduation</option>
+                        <option value="Ph.D." @if (Model.Degree == "Ph.D.") { <text> selected</text> }>Ph.D.</option>
+                    </select>
+                    <span id="error-degree" class="text-danger"></span>
+                </div>
+                <div class="form-group  mt-2 ">
+                    <label for="graduationYear">Graduation year:</label>
+                    <select id="graduationYear" name="GraduationYear" class="form-control" onblur="validateGraduationYear(this)">
+                        <option value="">Please select</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                    </select>
+
+                    <span id="error-graduationYear" class="text-danger"></span>
+                </div>
+                <label for="gpa">GPA:</label>
+                <input type="number" step="0.01" id="gpa" name="Gpa" placeholder="GPA" class="form-control" value="@Model.Gpa" onblur="validateGPA(this)">
+                <span id="error-gpa" class="text-danger"></span>
+                <input type="submit" value="Submit" class="btn btn-primary mt-2">
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/jquery-3.7.1.min.js")
+    @Scripts.Render("~/Scripts/MyScripts/select2.min.js")
+}
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<script src="~/Scripts/MyScripts/select2.min.js"></script>
+<script src="~/Scripts/MyScripts/main.js"></script>
+<script>
+    $(document).ready(function () {
+        populateYearDropdown();
+        $("#graduationYear").val(@Model.GraduationYear);
+    var selectedUniversity = "@Model.University"
+    var universityList = $("#universityList");
+    $("#universityList").select2({
+        placeholder: "Select university",
+        allowClear: true,
+        width: '100%'
+    });
+
+    $.getJSON('/Scripts/data.json', function (data) {
+        data.forEach(function (university) {
+            $("#universityList").append(`<option value="${university.name}">${university.name}</option>`);
+        });
+        universityList.val(selectedUniversity).trigger('change');
+    })
+        .fail(function (error) {
+            console.error('Error loading local JSON file:', error);
+        });
+
+});
+</script>
+

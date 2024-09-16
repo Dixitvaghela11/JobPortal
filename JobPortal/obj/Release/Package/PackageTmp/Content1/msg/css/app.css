@@ -1,0 +1,25 @@
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .chat, .footer-chat {
+        width: 100%;
+    }
+
+    .write-message {
+        width: calc(100% - 80px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-chat .icon, .header-chat .name {
+        margin-left: 10px;
+    }
+
+    .footer-chat .right {
+        margin-right: 10px;
+    }
+
+    .footer-chat .send {
+        margin-right: 10px;
+    }
+}

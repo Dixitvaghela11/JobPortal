@@ -1,0 +1,24 @@
+-----------Exception Details on  27-10-2023 07:31:12 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 27-10-2023 07:31:12 PM
+
+Error Line No : ine 212
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+ Error Page Url: https://localhost:44377/Home/Jobs
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

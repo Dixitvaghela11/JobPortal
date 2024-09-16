@@ -1,0 +1,216 @@
+-----------Exception Details on  5/8/2024 4:35:40 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 4:35:40 AM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/8/2024 6:21:52 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 6:21:52 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/8/2024 6:35:28 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 6:35:28 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/8/2024 6:55:17 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 6:55:17 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/8/2024 6:55:32 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 6:55:32 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/8/2024 7:18:14 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 7:18:14 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/8/2024 7:31:20 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 7:31:20 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/8/2024 7:47:22 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 7:47:22 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/8/2024 10:00:08 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/8/2024 10:00:08 PM
+
+Error Line No : ine 348
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/Employer/ChatList
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

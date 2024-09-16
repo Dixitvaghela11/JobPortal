@@ -1,0 +1,75 @@
+-----------Exception Details on  6/21/2024 3:04:31 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/21/2024 3:04:31 AM
+
+Error Line No : ine 195
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The DELETE statement conflicted with the REFERENCE constraint "FK__JobVacanc__Categ__7E37BEF6". The conflict occurred in database "JobPortal", table "dbo.JobVacancies", column 'CategoryID'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44377/Admin/DeleteCategory/3
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/21/2024 3:04:39 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/21/2024 3:04:39 AM
+
+Error Line No : ine 195
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The DELETE statement conflicted with the REFERENCE constraint "FK__JobVacanc__Categ__7E37BEF6". The conflict occurred in database "JobPortal", table "dbo.JobVacancies", column 'CategoryID'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44377/Admin/DeleteCategory/2
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/21/2024 3:04:45 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/21/2024 3:04:45 AM
+
+Error Line No : ine 195
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The DELETE statement conflicted with the REFERENCE constraint "FK__JobVacanc__Categ__7E37BEF6". The conflict occurred in database "JobPortal", table "dbo.JobVacancies", column 'CategoryID'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44377/Admin/DeleteCategory/14
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

@@ -1,0 +1,72 @@
+-----------Exception Details on  5/2/2024 7:53:33 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/2/2024 7:53:33 PM
+
+Error Line No : ine 149
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function 'SP_CreateContactUsMessage' expects parameter '@FirstName', which was not supplied.
+
+ Error Page Url: https://localhost:44377/Home/ContactUs
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/2/2024 7:56:34 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/2/2024 7:56:34 PM
+
+Error Line No : ine 149
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function 'SP_CreateContactUsMessage' expects parameter '@FirstName', which was not supplied.
+
+ Error Page Url: https://localhost:44377/Home/ContactUs
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  5/2/2024 7:57:54 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 5/2/2024 7:57:54 PM
+
+Error Line No : ine 149
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Procedure or function 'SP_CreateContactUsMessage' expects parameter '@FirstName', which was not supplied.
+
+ Error Page Url: https://localhost:44377/Home/ContactUs
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

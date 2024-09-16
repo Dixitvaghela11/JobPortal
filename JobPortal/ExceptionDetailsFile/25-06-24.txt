@@ -1,0 +1,216 @@
+-----------Exception Details on  6/25/2024 10:02:09 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:02:09 PM
+
+Error Line No : line 47
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/25/2024 10:02:42 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:02:42 PM
+
+Error Line No : line 50
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/25/2024 10:02:51 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:02:51 PM
+
+Error Line No : line 50
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/25/2024 10:03:58 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:03:58 PM
+
+Error Line No : line 50
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/25/2024 10:04:17 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:04:17 PM
+
+Error Line No : line 50
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/25/2024 10:04:27 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:04:27 PM
+
+Error Line No : line 50
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/25/2024 10:04:54 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:04:54 PM
+
+Error Line No : line 47
+
+Error Message: NullReferenceException
+
+Exception Type: System.NullReferenceException
+
+Error Location : Object reference not set to an instance of an object.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/25/2024 10:05:31 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:05:31 PM
+
+Error Line No : line 50
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  6/25/2024 10:06:17 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 6/25/2024 10:06:17 PM
+
+Error Line No : line 50
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Could not find stored procedure 'SP_ReadExperienceDetails'.
+
+ Error Page Url: https://localhost:44377/JobSeeker/JobSeekerProfile
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

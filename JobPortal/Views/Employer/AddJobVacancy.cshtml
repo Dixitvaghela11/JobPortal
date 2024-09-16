@@ -1,0 +1,259 @@
+﻿@model List<JobPortal.Models.Category>
+
+@{
+    ViewBag.Title = "AddJobVacancy";
+    Layout = "~/Views/Shared/EmployerLayout.cshtml";
+}
+
+@functions {
+    // Helper function to HTML encode user input
+    public string EncodeInput(string input)
+    {
+        return System.Web.HttpUtility.HtmlEncode(input);
+    }
+}
+
+<div class="d-flex justify-content-center m-5">
+    <div class="row bg-cus">
+        <div class="col-md-7">
+            <h4>Add job vacancy</h4>
+            <form action="@Url.Action("AddJobVacancy", "Employer")" method="post" onsubmit="return validateJobForm();">
+
+                <div class="form-group">
+                    <label for="JobTitle">Job title:</label>
+                    <input type="text" id="JobTitle" name="JobTitle" placeholder="Job title" onblur="validateJobTitle()" class="form-control">
+                    <span id="error-JobTitle" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Description">Description:</label>
+                    <textarea id="Description" name="Description" placeholder="Description" onblur="validateDescription()" class="form-control"></textarea>
+                    <span id="error-Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="CategoryID">Category:</label>
+                    <select id="CategoryID" name="CategoryID" onblur="validateCategory()" class="form-control">
+                        <option value="">Please select a category</option>
+                        @foreach (var cat in Model)
+                        {
+                            <option value="@cat.CategoryId">@cat.CategoryName</option>
+                        }
+                    </select>
+                    <span id="error-CategoryID" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Location">Location:</label>
+                    <input type="text" id="Location" name="Location" placeholder="Location" onblur="validateLocation()" class="form-control">
+                    <span id="error-Location" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Salary">Monthly Salary:</label>
+                    <input type="number" id="Salary" name="Salary" placeholder="Monthly Salary" onblur="validateSalary()" class="form-control">
+                    <span id="error-Salary" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="EmploymentType">Employment Type:</label>
+                    <select id="EmploymentType" name="EmploymentType" onchange="validateEmploymentType()" class="form-control">
+                        <option value="">Select Employment Type</option>
+                        <option value="Full-Time">Full-Time</option>
+                        <option value="Part-Time">Part-Time</option>
+                        <option value="Contract">Contract</option>
+                        <option value="Freelance">Freelance</option>
+                        <option value="Remote">Remote</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <span id="error-EmploymentType" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="ApplicationDeadline">Application Deadline:</label>
+                    <input type="date" id="ApplicationDeadline" name="ApplicationDeadline" placeholder="Deadline" onblur="validateApplicationDeadline()" class="form-control">
+                    <span id="error-ApplicationDeadline" class="text-danger"></span>
+                </div>
+                <center>
+                    <button type="submit" value="POST" class="btn-17">
+                        <span class="text-container">
+                            <span class="text">POST</span>
+                        </span>
+                    </button>
+                </center>
+            </form>
+        </div>
+        <div class="col-md-5"><img src="~/Content/Static/Job_Posting_Page.51e6ab7c156a002d438b.png" class="post-vac" /></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="~/Scripts/MyScripts/main.js"></script>
+<script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        disablePastDates(document.getElementById("ApplicationDeadline"));
+    });
+
+    $(document).ready(function () {
+        var cities = [
+            { "label": "Surat, Gujarat, India", "value": "Surat, Gujarat, India" },
+            { "label": "Ahmedabad, Gujarat, India", "value": "Ahmedabad, Gujarat, India" },
+            { "label": "Mumbai, Maharashtra, India", "value": "Mumbai, Maharashtra, India" },
+            { "label": "Pune, Maharashtra, India", "value": "Pune, Maharashtra, India" }
+        ];
+
+        $("#Location").autocomplete({
+            source: cities,
+            minLength: 2 // Start suggesting after 2 characters
+        });
+    });
+
+    CKEDITOR.replace('Description');
+</script>
+
+
+<style>
+    .btn-17,
+    .btn-17 *,
+    .btn-17 :after,
+    .btn-17 :before,
+    .btn-17:after,
+    .btn-17:before {
+        border: 0 solid;
+        box-sizing: border-box;
+    }
+
+    .btn-17 {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: button;
+        background-color: #010b1d;
+        background-image: none;
+        color: #fff;
+        cursor: pointer;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-size: 100%;
+        font-weight: 900;
+        line-height: 1.5;
+        margin: 0;
+        -webkit-mask-image: -webkit-radial-gradient(#010b1d, #fff);
+        padding: 0;
+        text-transform: uppercase;
+    }
+
+        .btn-17:disabled {
+            cursor: default;
+        }
+
+        .btn-17:-moz-focusring {
+            outline: auto;
+        }
+
+        .btn-17 svg {
+            display: block;
+            vertical-align: middle;
+        }
+
+        .btn-17 [hidden] {
+            display: none;
+        }
+
+    .btn-17 {
+        border-radius: 99rem;
+        border-width: 2px;
+        padding: 0.8rem 3rem;
+        z-index: 0;
+    }
+
+        .btn-17,
+        .btn-17 .text-container {
+            overflow: hidden;
+            position: relative;
+        }
+
+            .btn-17 .text-container {
+                display: block;
+                mix-blend-mode: difference;
+            }
+
+            .btn-17 .text {
+                display: block;
+                position: relative;
+            }
+
+            .btn-17:hover .text {
+                -webkit-animation: move-up-alternate 0.3s forwards;
+                animation: move-up-alternate 0.3s forwards;
+            }
+
+    @@-webkit-keyframes move-up-alternate {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(80%);
+        }
+
+        51% {
+            transform: translateY(-80%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @@keyframes move-up-alternate {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(80%);
+        }
+
+        51% {
+            transform: translateY(-80%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    .btn-17:after,
+    .btn-17:before {
+        --skew: 0.2;
+        background: #fff;
+        content: "";
+        display: block;
+        height: 102%;
+        left: calc(-50% - 50% * var(--skew));
+        pointer-events: none;
+        position: absolute;
+        top: -104%;
+        transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+        transition: transform 0.2s ease;
+        width: 100%;
+    }
+
+    .btn-17:after {
+        --progress: 0%;
+        left: calc(50% + 50% * var(--skew));
+        top: 102%;
+        z-index: -1;
+    }
+
+    .btn-17:hover:before {
+        --progress: 100%;
+    }
+
+    .btn-17:hover:after {
+        --progress: -102%;
+    }
+</style>
